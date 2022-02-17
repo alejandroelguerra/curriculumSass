@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Curriculum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styleSass.css" type="text/css" media="all" />
+        <script>
+            function fuenteDis() {
+                document.getElementById("cuerpo").style.fontFamily = "OpenDyslexic";
+
+                var buttons = document.getElementsByTagName('button');
+                for (let i = 0; i < buttons.length; i++) {
+                let button = buttons[i];
+                   button.className += ' dislexia';
+                   
+                }
+                
+            }
+            function fuenteNor() {
+              document.getElementById("cuerpo").style.fontFamily = "Roboto";
+
+              var buttons = document.getElementsByTagName('button');
+                for (let i = 0; i < buttons.length; i++) {
+                let button = buttons[i];
+                   button.classList.remove('dislexia');
+                   
+                }
+
+            }
+            </script>
+    </head>
+    <body id="cuerpo">
+        <div class="wrapper">
+
+            <div class="sidebar_wrapper">
+
+               <img src="images/hombre_cv.jpg">
+                <div class="contacto">
+                    <ul class="lista">
+                        <li><a><h3><b>Contacto:</b></h3></a></li>
+                        <li><a>alejandroguerra@gmail.com</a></li>
+                        <li><a>+34 722762514</a></li>
+                        <li><a class="link" href="https://es.linkedin.com/">linkedin</a></li>
+                       
+                    </ul>
+                    
+                </div>
+                <div class="intereses">
+                    <ul class="lista">
+                        <li><a><h3><b>Idiomas</b></h3></a></li>
+                        <li><a>Español (nativo)</a></li>
+                        <li><a>Ingles (advanced)</a></li>
+                        <button class="boton_letra" onclick=fuenteDis()>cambiar a dislexia</button>
+                        <button class="boton_letra" onclick=fuenteNor()>cambiar a normal</button>
+                        </ul>
+                </div>
+
+            </div> <!-- Cierre sidebar-wrapper -->
+        
+            <div class="main_wrapper">
+                <div class="alumno">
+                    <p><h1><b>Alejandro guerra</b></h1></p>
+                    <p><h3>System admin</h3></p>
+                </div>
+                <div class="texto">
+                    <div class="posicion_boton">
+                        <button class="boton" disabled><h3>Perfil</h3></button>
+                    </div>
+                    <div class="texto">
+                        <p>Como recien licenciado en el ciclo he realizado practicas en que me han permitdo desarrollar mis conocimientos.</p>
+                        <p>soy una persona orientada al cliente y en la busqueda de soluciones y puedo comunicarme en ingles y español.</p>
+                    </div>
+                </div>
+                <div class="texto">
+                    <div class="posicion_boton">
+                         <button class="boton" disabled><h3>Estudios</h3></button>
+                    </div>
+                    <div>
+                        <div class="texto" > 
+                            <a>2020-2021</a>
+                        </div>
+                        <div class="texto">
+                            <p>Ies lope de vega</p>
+                            <p>desarrollo aplicaciones web</p>
+                        </div>
+                    </div>
+                    <div class="posicion_boton">
+                    <button class="boton" disabled><h3>Virtudes</h3></button>
+                </div>
+                </div>
+                
+                <div>
+                    <button class="cualidades" disabled><h6><b>Empatia</b></h6></button>
+                    <button class="cualidades" disabled><h6><b>Dinamismo</b></h6></button>
+                    <button class="cualidades" disabled><h6><b>Organizacion</b></h6></button>
+                    <button class="cualidades" disabled><h6><b>Liderazgo</b></h6></button>
+                    <button class="cualidades" disabled><h6><b>Social</b></h6></button>
+                    <button class="cualidades" disabled><h6><b>Trabajo en equipo</b></h6></button>
+                </div>
+
+           
+                                        
+            </div> <!-- Cierre de main-wrapper-->   
+        </div> <!-- Cierre de wrapper -->
+
+
+    </body>
+</html>
